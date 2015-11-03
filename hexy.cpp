@@ -38,7 +38,7 @@ int main(int argc, char **argv)
   if ( hexstring[0] != '0' || !(hexstring[1] == 'x' || hexstring[1] == 'X') )
     deid("That's no a hex number, ya fanny");
 
-  int decimalTotal = 0;
+  long decimalTotal = 0;
 
   for ( i = 2; i < lenny ; i++ ) {
     decimalTotal += pow(16.0, (lenny - i - 1)) * getVal(hexstring[i]);
